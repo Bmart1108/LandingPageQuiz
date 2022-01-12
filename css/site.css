@@ -71,6 +71,9 @@ body {
     color: var(--bm-dark-color);
     background-image: url(/img/LandingPage_1920.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
 
 .content {
@@ -78,7 +81,7 @@ body {
 }
 
 .footer {
-    padding-top: 80em;
+    padding-top: 1em;
     flex-shrink: 0;
 
 }
