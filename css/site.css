@@ -32,6 +32,8 @@ h1,
     font-family: var(--title-font);
 }
 
+
+
 .mainTitle {
     font-size: 2.5rem;
     line-height: 2rem;
@@ -61,6 +63,7 @@ body {
     height: 100%;
     color: var(--cf-light);
     font-family: 'Roboto', sans-serif;
+    color: #ebebeb;
     background-color: #00223d;
 }
 
@@ -73,23 +76,28 @@ body {
     font-family: var(--title-font);
     font-size: var(--bm-font-size);
     font-weight: var(--bm-font-weight);
-    color: var(--bm-dark-color);
     background-image: url(/img/LandingPage_576x200.png);
     background-position: top center;
     background-repeat: no-repeat;
-    background-blend-mode: color 00223d;
+    
 }
 
 nav {
     background-color: transparent;
+    font-family:'Racing Sans One',cursive;
+    font-size: 1.8rem;
+    color: white;
+    
+    
 }
 
-nav>div>a:hover {
-    color: var(--cf-light);
+nav>div>img>a:hover {
+    color: var(--cf-highlight);
 }
 
 .nav-item a:hover {
     color: var(--cf-highlight);
+    
 }
 
 .content {
@@ -99,6 +107,9 @@ nav>div>a:hover {
 .footer {
     flex-shrink: 0;
     background-color: transparent;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    
 }
 
 /* Media*/
@@ -119,7 +130,7 @@ nav>div>a:hover {
 
     .subtitle {
         font-family: 'Fira Sans', sans-serif;
-        font-size: 1em;
+        font-size: 1.2em;
         line-height: 1em;
         font-weight: 1;
         letter-spacing: .4rem;
@@ -143,8 +154,8 @@ nav>div>a:hover {
 
     .subtitle {
         font-family: 'Fira Sans', sans-serif;
-        font-size: 1em;
-        line-height: 1em;
+        font-size: 1.4em;
+        line-height: 1.1em;
         font-weight: 1;
         letter-spacing: .4rem;
     }
@@ -169,8 +180,8 @@ nav>div>a:hover {
 
     .subtitle {
         font-family: 'Fira Sans', sans-serif;
-        font-size: 1em;
-        line-height: 1em;
+        font-size: 1.em;
+        line-height: 1.2em;
         font-weight: 1;
         letter-spacing: .4rem;
     }
@@ -194,8 +205,8 @@ nav>div>a:hover {
 
     .subtitle {
         font-family: 'Fira Sans', sans-serif;
-        font-size: 1em;
-        line-height: 1em;
+        font-size: 1.5em;
+        line-height: 1.2em;
         font-weight: 1;
         letter-spacing: .4rem;
     }
@@ -219,7 +230,7 @@ nav>div>a:hover {
     .subtitle {
         font-family: 'Fira Sans', sans-serif;
         color: var(--bm-light-color);
-        font-size: 1em;
+        font-size: 1.5em;
         line-height: 1em;
         font-weight: 1;
         letter-spacing: .4rem;
