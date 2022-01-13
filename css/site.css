@@ -14,6 +14,10 @@
     --bm-font-weight: 100;
     --bm-line-height: 1;
 }
+html{
+    height: 100%;
+    width: 100%;
+}
 
 h6,
 .h6,
@@ -24,10 +28,7 @@ h4,
 h3,
 .h3,
 h2,
-.h2 {
-    font-family: var(--bm-subtitle-font);
-}
-
+.h2,
 h1,
 .h1 {
     font-family: var(--title-font);
@@ -67,20 +68,19 @@ h1,
     background-color: #fae100;
 }
 
-.section-page {
-    height: 100%;
-    padding-top: 30em;
-    padding-left: 1em;
-}
+
 
 body {
     font-family: var(--title-font);
     font-size: var(--bm-font-size);
     font-weight: var(--bm-font-weight);
     color: var(--bm-dark-color);
-    background-image: url(/img/LandingPage_1920.png);
+   /* background-image: url(/img/LandingPage_1920.png);*/
     background-repeat: no-repeat;
-    --webkit-text-size-adjust:100%
+    background-blend-mode: color 00223d;
+    height: 100%;
+    width: 100%;
+    padding-top: 30em;
 
 
 
@@ -103,7 +103,7 @@ body {
 /* Media*/
 @media (min-width: 250.98px) {
 
-    body {
+    body{
         background-image: url(/img/landing375x150.jpg);
         height: 274px;
 
@@ -114,11 +114,19 @@ body {
         font-size: 2em;
         line-height: 1;
     }
+    .subtitle {
+        font-family: var(--bm-subtitle-font);
+        color: var(--bm-light-color);
+        font-size: 1em;
+        line-height: 1em;
+        font-weight: 1;
+        letter-spacing: .4rem;
+    }
 }
 
 @media (min-width: 374.98px) {
 
-    body {
+    body{
         background-image: url(/img/landing576x200.jpg);
         height: 274px;
 
@@ -128,12 +136,20 @@ body {
         font-size: 2.5em;
         line-height: 1.1;
     }
+        .subtitle {
+            font-family: var(--bm-subtitle-font);
+            color: var(--bm-light-color);
+            font-size: 1em;
+            line-height: 1em;
+            font-weight: 1;
+            letter-spacing: .4rem;
+        }
 
 }
 
 @media (min-width: 767.98px) {
 
-    body {
+    body{
         background-image: url(/img/landing\ 992x300.jpg);
         height: 374px;
 
@@ -146,11 +162,19 @@ body {
 
 
     }
+        .subtitle {
+            font-family: var(--bm-subtitle-font);
+            color: var(--bm-light-color);
+            font-size: 1em;
+            line-height: 1em;
+            font-weight: 1;
+            letter-spacing: .4rem;
+        }
 }
 
 @media (min-width: 991.98px) {
 
-    body {
+    body{
         background-image: url(/img/landing1200x400.jpg);
         height: 474px;
 
@@ -160,6 +184,14 @@ body {
         font-size: 4em;
         line-height: 1;
     }
+        .subtitle {
+            font-family: var(--bm-subtitle-font);
+            color: var(--bm-light-color);
+            font-size: 1em;
+            line-height: 1em;
+            font-weight: 1;
+            letter-spacing: .4rem;
+        }
 
 }
 @media (min-width: 1199.98px) {
@@ -172,6 +204,21 @@ body {
         font-size: 5rem;
         line-height: 4.5rem;
     }
+        .subtitle {
+            font-family: var(--bm-subtitle-font);
+            color: var(--bm-light-color);
+            font-size: 1em;
+            line-height: 1em;
+            font-weight: 1;
+            letter-spacing: .4rem;
+        }
+        .mainHeader {
+
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 22em;
+        }
 
 }
 
@@ -188,5 +235,20 @@ body {
         font-size: 4em;
         line-height: .9;
     }
+        .subtitle {
+            font-family: var(--bm-subtitle-font);
+            color: var(--bm-light-color);
+            font-size: 1em;
+            line-height: 1em;
+            font-weight: 1;
+            letter-spacing: .4rem;
+        }
+        .mainHeader {
+
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 22em;
+        }
      
 }
