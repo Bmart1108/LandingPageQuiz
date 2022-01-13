@@ -14,10 +14,8 @@
     --bm-font-weight: 100;
     --bm-line-height: 1;
 }
-html{
-    height: 100%;
-    width: 100%;
-}
+
+
 
 h6,
 .h6,
@@ -34,30 +32,20 @@ h1,
     font-family: var(--title-font);
 }
 
-.mainHeader {
-    
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 22em;
-}
-
-
-
 .mainTitle {
-    font-family: var(--title-font);
-    color: var(--bm-light-color);
-    font-size: 4em;
-    line-height: 1em;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    font-family: 'Racing Sans One', cursive;
+    color: #ebebeb;
 }
 
 .subtitle {
-    font-family: var(--bm-subtitle-font);
+    font-family: 'Fira Sans', sans-serif;
     color: var(--bm-light-color);
-    font-size: 1em;
-    line-height: 1em;
-    font-weight: 1;
-    letter-spacing: .4rem;
+    font-size: .95rem;
+    line-height: 1.2rem;
+    font-weight: 200;
+    letter-spacing: .06rem;
 }
 
 .button {
@@ -68,55 +56,69 @@ h1,
     background-color: #fae100;
 }
 
-
+html,
+body {
+    height: 100%;
+    color: var(--cf-light);
+    font-family: 'Roboto', sans-serif;
+    background-color: #00223d;
+}
 
 body {
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyBG {
     font-family: var(--title-font);
     font-size: var(--bm-font-size);
     font-weight: var(--bm-font-weight);
     color: var(--bm-dark-color);
-   /* background-image: url(/img/LandingPage_1920.png);*/
+    background-image: url(/img/LandingPage_576x200.png);
+    background-position: top center;
     background-repeat: no-repeat;
     background-blend-mode: color 00223d;
-    height: 100%;
-    width: 100%;
-    padding-top: 30em;
+}
 
+nav {
+    background-color: transparent;
+}
 
+nav>div>a:hover {
+    color: var(--cf-light);
+}
 
-
+.nav-item a:hover {
+    color: var(--cf-highlight);
 }
 
 .content {
-    flex: auto;
+    flex: 1 0 auto;
 }
 
 .footer {
-    font-size: 1em;
-    font-weight: 400;
-    color: #212121;
-    padding-top: 1em;
     flex-shrink: 0;
-
+    background-color: transparent;
 }
 
 /* Media*/
-@media (min-width: 250.98px) {
+@media (min-width: 575.98px) {
 
-    body{
-        background-image: url(/img/landing375x150.jpg);
-        height: 274px;
-
+    .bodyBG {
+        background-image: url(/img/LandingPage_768x512.png);
+        background-position: top right;
+        background-repeat: no-repeat;
     }
 
 
     .mainTitle {
-        font-size: 2em;
-        line-height: 1;
+        font-size: 5rem;
+        color: #ebebeb;
+        line-height: 4.5rem;
     }
+
     .subtitle {
-        font-family: var(--bm-subtitle-font);
-        color: var(--bm-light-color);
+        font-family: 'Fira Sans', sans-serif;
         font-size: 1em;
         line-height: 1em;
         font-weight: 1;
@@ -124,131 +126,102 @@ body {
     }
 }
 
-@media (min-width: 374.98px) {
-
-    body{
-        background-image: url(/img/landing576x200.jpg);
-        height: 274px;
-
-    }
-
-    .mainTitle {
-        font-size: 2.5em;
-        line-height: 1.1;
-    }
-        .subtitle {
-            font-family: var(--bm-subtitle-font);
-            color: var(--bm-light-color);
-            font-size: 1em;
-            line-height: 1em;
-            font-weight: 1;
-            letter-spacing: .4rem;
-        }
-
-}
-
 @media (min-width: 767.98px) {
 
-    body{
-        background-image: url(/img/landing\ 992x300.jpg);
-        height: 374px;
+    .bodyBG {
+        background-image: url(/img/LandingPage_992x300.png);
+        background-position: top right;
+        background-repeat: no-repeat;
 
     }
 
     .mainTitle {
-        font-size: 3em;
-        line-height: 1;
-
-
-
+        font-size: 4rem;
+        color: #ebebeb;
+        line-height: 3.5rem;
     }
-        .subtitle {
-            font-family: var(--bm-subtitle-font);
-            color: var(--bm-light-color);
-            font-size: 1em;
-            line-height: 1em;
-            font-weight: 1;
-            letter-spacing: .4rem;
-        }
+
+    .subtitle {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 1em;
+        line-height: 1em;
+        font-weight: 1;
+        letter-spacing: .4rem;
+    }
 }
+
+
 
 @media (min-width: 991.98px) {
 
-    body{
-        background-image: url(/img/landing1200x400.jpg);
-        height: 474px;
+    .bodyBG {
+        background-image: url(/img/LandingPage_992x300.png);
+        background-position: top right;
+        background-repeat: no-repeat;
 
-    }
-
-    .mainTitle {
-        font-size: 4em;
-        line-height: 1;
-    }
-        .subtitle {
-            font-family: var(--bm-subtitle-font);
-            color: var(--bm-light-color);
-            font-size: 1em;
-            line-height: 1em;
-            font-weight: 1;
-            letter-spacing: .4rem;
-        }
-
-}
-@media (min-width: 1199.98px) {
-    body{
-        background-image: url(/img/LandingPage_1920.png);
-        height: 574px;
     }
 
     .mainTitle {
         font-size: 5rem;
+        color: #ebebeb;
         line-height: 4.5rem;
     }
-        .subtitle {
-            font-family: var(--bm-subtitle-font);
-            color: var(--bm-light-color);
-            font-size: 1em;
-            line-height: 1em;
-            font-weight: 1;
-            letter-spacing: .4rem;
-        }
-        .mainHeader {
 
-            height: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-top: 22em;
-        }
-
+    .subtitle {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 1em;
+        line-height: 1em;
+        font-weight: 1;
+        letter-spacing: .4rem;
+    }
 }
 
 
-@media (min-width: 1399.98px) {
+@media (min-width: 1199.98px) {
 
-    body {
-        background-image: url(/img/LandingPage_1920.png);
-        height: 574px;
+    .bodyBG {
+        background-image: url(/img/LandingPage_1200x400.png);
+        background-position: top right;
+        background-repeat: no-repeat;
 
     }
 
     .mainTitle {
-        font-size: 4em;
-        line-height: .9;
+        font-size: 5rem;
+        color: #ebebeb;
+        line-height: 4.5rem;
     }
-        .subtitle {
-            font-family: var(--bm-subtitle-font);
-            color: var(--bm-light-color);
-            font-size: 1em;
-            line-height: 1em;
-            font-weight: 1;
-            letter-spacing: .4rem;
-        }
-        .mainHeader {
 
-            height: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-top: 22em;
-        }
-     
+    .subtitle {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 1em;
+        line-height: 1em;
+        font-weight: 1;
+        letter-spacing: .4rem;
+    }
+}
+
+
+
+@media (min-width: 1399.98px) {
+    .bodyBG {
+        background-image: url(/img/LandingPage_1920.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
+    .mainTitle {
+        font-size: 5rem;
+        color: #ebebeb;
+        line-height: 4.5rem;
+    }
+
+    .subtitle {
+        font-family: 'Fira Sans', sans-serif;
+        color: var(--bm-light-color);
+        font-size: 1em;
+        line-height: 1em;
+        font-weight: 1;
+        letter-spacing: .4rem;
+    }
 }
